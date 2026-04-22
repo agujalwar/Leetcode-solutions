@@ -1,13 +1,5 @@
-/*
-select email as Email
-from
-(select email, count(email) as c
-from Person
-group by email ) as temp
-where c > 1
-*/
-
+# Write your MySQL query statement below
 SELECT email
 FROM Person
 GROUP BY email
-HAVING COUNT(*) > 1;
+HAVING COUNT(*) > 1
